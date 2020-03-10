@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <%- include("partials/header.ejs"); %>
+  <body>
+    <h1>Home</h1>
+    <p><%= content %></p>
+
+    <% for(var i=0; i<arr.length;i++) { %>
+    <h1> <%= arr[i].title %> </h1>
+    <br>
+    <p><%= arr[i].content.substring(0, 100)+"..." %><a href="/arr/<%= arr[i].title%>">Read more</a></p>
+
+    <% } %>
+
+  </body>
+  <%- include("partials/footer.ejs"); %>
+ </head>
+ </html>

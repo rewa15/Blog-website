@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <%- include("partials/header.ejs"); %>
+  <body>
+    <h1>Compose</h1>
+<form action="/compose" method="post">
+<div class="form-group">
+    <label>Title</label>
+    <input type="text" class="form-control" name="postTitle"><br>
+    <label>Post</label>
+    <textarea name="postBody" class="form-control" rows="4" cols="40"></textarea>
+
+</div>
+<button type="submit" class="btn btn-primary">PUBLISH</button>
+</form>
+
+  </body>
+  <%- include("partials/footer.ejs"); %>
+ </head>
+ </html>
